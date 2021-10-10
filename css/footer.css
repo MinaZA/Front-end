@@ -1,0 +1,240 @@
+* {
+	box-sizing: border-box;
+}
+
+body > footer {
+	display: grid;
+	row-gap:10px;
+	padding: 40px 0 0;
+	box-sizing: border-box;
+	border-top: 1px solid rgb(46, 45, 45);;
+	background-color: rgb(247, 247, 247);
+}
+
+
+
+.bas {
+	display : flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding : 80px 10px 0;
+	margin-left : 10%;
+	margin-right: 10%;
+
+}
+
+.social{
+    display: flex;
+	flex-direction: row;
+    width: 60%;
+}
+
+.social ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+.social img{
+	height: 70px;
+}
+
+.service {
+	width: 50%;
+	margin : 0 auto;
+}
+
+.titre-services {
+    display: block;
+    padding-bottom: 30px;
+    font-size: 20px;
+	text-align: start;
+	font-weight: bold;
+}
+
+.services h1 {
+	font-size: 2em;
+}
+
+
+.services img{
+    height: 100px;
+}
+
+
+.container {
+	width: 90%;
+	text-align: center;
+	margin: auto;
+}
+
+.container-services{
+	display: flex;
+	flex-wrap:wrap;
+	line-height: 23px;
+	font-size : 1rem;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+	justify-content: space-between;
+}
+
+.case-services {
+	background-color: white;
+	width: 18%;
+	padding:1%;
+	border-radius: 10px;
+}
+
+.case-container a {
+	cursor: pointer;
+}
+
+.lien{
+	display: flex;
+	flex-direction: column;
+	color : #727171;
+	
+}
+
+
+.information{
+	font-size:1.1em;
+}
+
+
+.information h1 {
+	font-size: 1.5em;
+	padding-bottom:10px;
+}
+
+.CGV{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+	margin : auto;
+	justify-content:space-evenly;
+	background-color: rgb(46, 45, 45);;
+}
+
+.CGV a:link {
+	color : rgb(241, 241, 241);
+}
+
+.CGV a:visited {
+	color : rgb(241, 241, 241);
+}
+
+.logo-footer{
+	height: 72px;
+}
+
+.lien-CGV{
+	margin-top:auto;
+	margin-bottom:auto;
+	font-size: 1.1em;
+
+}
+.CGV img{
+	padding-top:2%;
+}
+
+
+.information li {
+	color : #727171;
+}
+
+@media screen and ( max-width: 700px ) {
+	
+	.service {
+		width: 50%;
+		margin : 0 auto;
+	}
+
+	.titre-services {
+		display: block;
+		padding-bottom: 30px;
+		font-size: 20px;
+		text-align: start;
+		font-weight: bold;
+	}
+
+	.services h1 {
+		font-size: 2em;
+	}
+
+
+	.services img{
+		height: 90px;
+	}
+
+
+	.container {
+		width: 90%;
+		text-align: center;
+		margin: auto;
+	}
+
+	.container-services{
+		display: flex;
+		flex-wrap:wrap;
+		line-height: 23px;
+		font-size : 1rem;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		text-transform: uppercase;
+		justify-content: space-between;
+	}
+
+	.case-services {
+		background-color: white;
+		width: 18%;
+		padding:1%;
+		border-radius: 10px;
+	}
+
+	.case-container a {
+		cursor: pointer;
+	}
+
+	.lien{
+		display: flex;
+		flex-direction: column;
+		color : #727171;
+		
+	}
+	.texte{
+		font-size: 0.85em;
+	}
+
+	
+	.information{
+		font-size:1.1em;
+	}
+
+
+	.information h1 {
+		font-size: 1.5em;
+		padding-bottom:10px;
+	}
+
+	.social{
+		margin-top:auto;
+		margin-bottom:auto;
+		width: 55%;
+	}
+	.social img{
+		height: 50px;
+		justify-content: space-between;
+
+		
+	}
+
+	/*Edit Panier.css*/
+	.image{
+		height: 150px;
+	}
+	
+
+}
+

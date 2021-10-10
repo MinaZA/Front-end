@@ -1,0 +1,268 @@
+@font-face {
+    font-family: "RetroWave";
+    src: url('/fonts/font.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav a:link { 
+    text-decoration:none;
+    color : black;
+}
+
+nav a:visited {
+    color : black;
+}
+
+.cadie{
+    margin-top: 1%;
+    margin-left: 2%;
+    height: 72px;
+}
+
+.logo{
+    height: 72px;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.burger{
+    height: 72px;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+
+header {
+    border-bottom: 1px solid rgb(46, 45, 45);
+}
+
+
+header > nav > ul {
+    width: 100%;
+    z-index: 10000;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    justify-content: space-between;
+    padding-top:0px;
+    padding-bottom: 0px;
+}
+
+header li a{
+    display: block;
+    padding :30px;
+    font-size: 20px;
+}
+
+.shop{
+    display: inherit;
+    padding:0;
+    font-size: inherit;
+}
+
+header li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu_sous {
+    display: none;
+    background-color:rgb(46, 45, 45);
+}
+
+
+header li:hover a {
+    background-color: rgb(46, 45, 45);
+    color: white;
+}
+
+header li:hover .menu_sous {
+    display: block;
+    position : absolute;
+}
+
+.menu_sous li {
+    display: block;
+}
+
+.menu_sous li a {
+    color : black;
+}
+
+.menu_sous li:hover a {
+    background-color: white;
+    color : rgb(46, 45, 45);
+}
+
+nav > ul > li > form > input {
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(207, 202, 202);
+    margin-top:6%;
+} 
+
+.li-nav4{
+    display: flex;
+}
+.compteur{
+    display: flex;
+    position: absolute;
+    left:45%;
+    top:35%;
+    font-size: 1.1em;
+}
+
+.li-nav4:hover a{
+    background-color: inherit;
+    color:inherit;
+}
+
+.li-logo{
+    margin-top:auto;
+    margin-bottom: auto;
+    height: 72px;
+}
+
+
+
+
+
+
+
+/* Smartphone */
+@media screen and ( max-width: 700px ) {
+
+	/* Menu burger */
+	.burger {
+		margin: 10px 0;
+        right: 10px;
+		transition: transform .6s ease;
+	}
+	body > header > nav.opened .burger {
+		transform: rotate( 270deg );
+	}
+
+	/* Liste */
+	body > header > nav > ul > li {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		box-sizing: border-box;
+		justify-content: space-between;
+		background-color: #fff;
+		border-bottom: 1px solid black;
+		transition: transform .6s ease;
+	}
+    header > nav > ul{
+        padding : 0;
+    }
+    .li-nav4{
+        padding-bottom: 100px;
+    }
+	body > header > nav:not( .opened ) > ul > li {
+		transform: translateX( 100% );
+	}
+
+    nav.opened > ul > li {
+        position: relative;
+    }
+
+    nav.opened > ul > li > a::after {
+        font-weight: 1000;
+        content: ">";
+	    position: absolute;
+	    left: 90%;
+    }
+
+    header li:hover .menu_sous {
+        display: none;
+        position : absolute;
+    }
+    .menu_sous li:hover a{
+        background-color: none;
+        color : none;
+    }
+    header li:hover a {
+        background-color: white;
+        color: black;
+    }
+    .menu_sous{
+        background-color: white;
+        color:black;
+        position:absolute;
+    }
+
+
+
+
+    body > header > nav.opened > ul > .li-nav1.opened1 > .menu_sous{
+        display: block;
+    }
+    body > header > nav.opened > ul > .li-nav2.opened2 > .menu_sous{
+        display: block;
+    }
+    body > header > nav.opened > ul > .li-nav1:not(.opened1) > .menu_sous{
+        transform: translateY( -100% );
+    }
+    body > header > nav.opened > ul > .li-nav2:not(.opened2) > .menu_sous{
+        transform: translateY( -100% );
+    }
+
+    body > header > nav.opened > ul > .li-nav2.notopened1 {
+        transform: translateY(240px);
+    }
+    body > header > nav.opened > ul > .li-nav3.notopened1 {
+        transform: translateY(240px);
+    }
+    body > header > nav.opened > ul > .li-nav4.notopened1 {
+        transform: translateY(240px);
+    }
+    body > header > nav.opened > ul > .li-nav3.notopened2 {
+        transform: translateY(240px);
+    }
+    body > header > nav.opened > ul > .li-nav4.notopened2 {
+        transform: translateY(240px);
+    }
+    body > header > nav.opened > ul > .li-nav3.notopened1.notopened2 {
+        transform: translateY(240px);
+    }
+
+
+    .menu_sous > li {
+        width: 100%;
+    }
+
+    nav > ul > li > form > input{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .cart{
+        display: flex;
+        position: relative;
+        left:-100px;
+        
+    }
+    .compteur{
+        left:35px;
+        top:28px;
+    }
+
+
+}
+
+/* PC */
+@media screen and ( min-width: 701px ) {
+	/* Menu burger */
+	body > header > nav img.burger {
+		display: none;
+	}
+}
